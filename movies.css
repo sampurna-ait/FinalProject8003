@@ -1,0 +1,104 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    background-image: linear-gradient(to right, #434343 , black);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #f8f9fa;
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+
+.movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px auto; 
+    max-width: 1000px;
+}
+
+.movie-item {
+    width: 180px;
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.movie-item:hover {
+    transform: scale(1.05);
+}
+
+.movie-meta li {
+    font-weight: bold;
+}
+
+.movie-item a {
+    text-decoration: none; 
+}
+
+.movie-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.movie-info {
+    margin-top: 5px;
+}
+
+.movie-title {
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 1rem;
+    color: whitesmoke;
+    transition: color 0.3s ease;
+}
+
+.movie-title:hover{
+    color: #e60606;
+}
+
+.movie-year {
+    color: white;
+    font-size: 0.9em;
+}
+
+.favorite-button {
+    background-color: #e60606;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.favorite-button:hover {
+    background-color: #b00505;
+    transform: scale(1.05);
+}
+
+.filter-button.active {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.3s ease;
+}
+
+.filter-button.active:hover {
+    background-color: #ffc107;
+    transform: scale(1.1);
+}

@@ -1,0 +1,138 @@
+body {
+    background: linear-gradient(90deg, #333, #555); 
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 80px auto; /* Space from the top for the fixed header */
+    padding: 30px;
+    background-color: rgba(184, 165, 130, 0.8);  /* Slight transparency for elegance */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.content:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); 
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #f39c12; 
+    margin-bottom: 40px;
+    font-weight: 600;
+    text-transform: uppercase;  
+    letter-spacing: 2px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    justify-content: center;
+}
+
+.col-sm-6 {
+    flex: 1 1 250px;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+.panel {
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 15px;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.panel:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); 
+}
+
+.panel-heading {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #f39c12; 
+    text-transform: uppercase;
+}
+
+.panel-body {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.panel-body p {
+    margin-bottom: 12px;
+    color: #ccc;  
+}
+
+img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+img:hover {
+    transform: scale(1.1); 
+}
+
+.panel-body p strong {
+    color: #f39c12; 
+}
+
+
+
+
+@media (max-width: 768px) {
+    .content {
+        padding: 15px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .panel-body p {
+        font-size: 1em;
+    }
+
+    img {
+        max-width: 150px; 
+    }
+
+    h2 {
+        font-size: 2em; 
+    }
+}
+
+.btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.btn:hover {
+    background-color: #e67e22;
+    transition: background-color 0.3s ease;
+}

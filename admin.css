@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(to right, #434343 , black),
+    url('posters/1.jpg') no-repeat center center fixed ;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color:whitesmoke;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 900px;
+    padding: 40px;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 48px;
+    color: #e23636;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.login-form {
+    flex: 1;
+    color:#d02020
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.remember-forgot label {
+    font-size: 14px;
+    color: #555;
+}
+
+.remember-forgot a {
+    font-size: 14px;
+    color: #e23636;
+    text-decoration: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #e23636;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #d02020;
+}
+
+#cancel-btn {
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    background-color: #e23636;
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+  
+  .cancel-button:hover {
+    background-color: #616161; 
+  }
+  
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .header-content {
+        flex-direction: column; 
+        text-align: center; 
+    }
+  
+    .menu li {
+        display: block; 
+        margin: 5px 0; 
+    }
+  
+    .movie-item {
+        width: 100px; 
+    }
+  }
+  
+
+  

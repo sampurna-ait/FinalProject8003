@@ -1,0 +1,169 @@
+
+.site-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+.main-content {
+    margin-top: 60px; 
+}
+.main-navigation {
+    background: linear-gradient(90deg, #1a1a1a, #4b4b4b); 
+    padding: 15px 20px;
+    display: flex;
+    position: relative;
+    z-index: 10;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.main-navigation.scrolled {
+    background: linear-gradient(90deg, #333, #555); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+}
+
+
+.main-navigation .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation .menu li {
+    margin: 0 12px;
+}
+
+.main-navigation .menu li a {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; 
+    transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.main-navigation .menu li a:hover,
+.main-navigation .menu li a.active {
+    color: #f39c12;
+    border-color: #f39c12; 
+    transform: scale(1.05); 
+}
+
+
+.mobile-menu-btn {
+    display: none;
+    font-size: 28px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.mobile-menu-btn:hover {
+    color: #f39c12; 
+    transform: rotate(90deg); 
+}
+
+
+nav .search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+}
+
+nav .search-bar input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    width: 200px;
+    transition: border-color 0.3s ease; 
+}
+
+nav .search-bar input:focus {
+    border-color: #555;
+    outline: none;
+}
+
+nav .search-bar button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    font-size: 14px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+nav .search-bar button:hover {
+    background-color: #555;
+    transform: scale(1.2); 
+}
+
+nav .search-bar button i {
+    font-size: 12px; 
+}
+
+nav .admin-access {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav .admin-access .admin-link {
+    background-color: #333;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav .admin-access .admin-link:hover {
+    background-color: #555;
+    transform: scale(1.1); 
+}
+
+
+/* responsive mavbar for mobile */
+@media (max-width: 768px) {
+    .main-navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-navigation .menu {
+        flex-direction: column;
+        width: 100%;
+        display: none; 
+    }
+
+    .main-navigation.active .menu {
+        display: flex; 
+    }
+
+    .main-navigation .menu li {
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+}
